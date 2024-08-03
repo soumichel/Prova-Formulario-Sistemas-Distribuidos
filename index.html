@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emakers Jr. - Gestão de Empresa Júnior</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/Logo_completa_sem_fundo.png" alt="Logo da Emakers" class="logo">
+            <h1>Emakers Jr. - Gestão de Empresa Júnior</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" id="projectsTab">Projetos</a></li>
+                <li><a href="#" id="membersTab">Membros</a></li>
+                <li><a href="#" id="eventsTab">Eventos</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="projectsSection" class="tabContent">
+                <h2>Projetos</h2>
+                <form id="projectForm">
+                    <div class="form-group">
+                        <label for="projectName">Nome do Projeto:</label>
+                        <input type="text" id="projectName" name="projectName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDescription">Descrição do Projeto:</label>
+                        <textarea id="projectDescription" name="projectDescription" required></textarea>
+                    </div>
+                    <button type="submit">Cadastrar Projeto</button>
+                </form>
+                <ul id="projectList"></ul>
+                <footer>
+                    <p>© Formulário desenvolvido por Michel A. de Souza para a disciplina de Sistemas Distribuídos.</p>
+                </footer>
+            </section>
+            <section id="membersSection" class="tabContent">
+                <h2>Membros</h2>
+                <form id="memberForm">
+                    <div class="form-group">
+                        <label for="memberName">Nome do Membro:</label>
+                        <input type="text" id="memberName" name="memberName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="memberRole">Função:</label>
+                        <input type="text" id="memberRole" name="memberRole" required>
+                    </div>
+                    <button type="submit">Cadastrar Membro</button>
+                </form>
+                <ul id="memberList"></ul>
+                <footer>
+                    <p>© Formulário desenvolvido por Michel A. de Souza para a disciplina de Sistemas Distribuídos.</p>
+                </footer>
+            </section>
+            <section id="eventsSection" class="tabContent">
+                <h2>Eventos</h2>
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="eventName">Nome do Evento:</label>
+                        <input type="text" id="eventName" name="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Data do Evento:</label>
+                        <input type="date" id="eventDate" name="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventLocation">Local do Evento:</label>
+                        <input type="text" id="eventLocation" name="eventLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDescription">Descrição do Evento:</label>
+                        <textarea id="eventDescription" name="eventDescription" required></textarea>
+                    </div>
+                    <button type="submit">Cadastrar Evento</button>
+                </form>
+                <ul id="eventList"></ul>
+                <footer>
+                    <p>© Formulário desenvolvido por Michel A. de Souza para a disciplina de Sistemas Distribuídos.</p>
+                </footer>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
